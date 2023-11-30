@@ -1,0 +1,134 @@
+<!-- <div id="container" class="ios"> -->
+ <ion-header>
+  <ion-toolbar>
+    <ion-title>
+        Header
+    </ion-title>
+  </ion-toolbar>
+ </ion-header> 
+ <ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size="8" size-md="8" size-lg="6">
+        <ion-card  class="ion-margin">
+          <ion-card-header>
+            <ion-card-title>Login</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item >
+              <ion-input
+                minlength="5"
+                required
+                label="User Name"
+                fill="solid"
+                labelPlacement="floating"
+                [(ngModel)]="LoginDetail.UserName"
+                #UserName="ngModel"
+              ></ion-input>
+            </ion-item>
+            <div
+              style="color: red; margin-left: 1rem"
+              *ngIf="UserName.errors?.['minlength']"
+            >
+              Name must be at least 5 characters long.
+            </div>
+            <br />
+            <ion-item>
+              <ion-input
+                minlength="5"
+                required
+                type="password"
+                fill="solid"
+                label="Password"
+                labelPlacement="floating"
+                [(ngModel)]="LoginDetail.Password"
+                #Password="ngModel"
+              ></ion-input>
+            </ion-item>
+            <div style="color: red" *ngIf="Password.errors?.['minlength']">
+              Password must be at least 5 characters long.
+            </div>
+            <br />
+            <ion-button
+            style="z-index: 50;"
+              color="success"
+              shape="round"
+              expand="block"
+              (click)="loginClick()"
+              >Login</ion-button
+              >
+        
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+ <!-- <ion-content class="ion-padding">
+  <div class="center-container">
+  <ion-card  class="ion-margin">
+  <ion-card-header>
+    <ion-card-title>Login</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item >
+      <ion-input
+        minlength="5"
+        required
+        label="User Name"
+        fill="solid"
+        labelPlacement="floating"
+        [(ngModel)]="LoginDetail.UserName"
+        #UserName="ngModel"
+      ></ion-input>
+    </ion-item>
+    <div
+      style="color: red; margin-left: 1rem"
+      *ngIf="UserName.errors?.['minlength']"
+    >
+      Name must be at least 5 characters long.
+    </div>
+    <br />
+    <ion-item>
+      <ion-input
+        minlength="5"
+        required
+        type="password"
+        fill="solid"
+        label="Password"
+        labelPlacement="floating"
+        [(ngModel)]="LoginDetail.Password"
+        #Password="ngModel"
+      ></ion-input>
+    </ion-item>
+    <div style="color: red" *ngIf="Password.errors?.['minlength']">
+      Password must be at least 5 characters long.
+    </div>
+    <br />
+    <ion-button
+    style="z-index: 50;"
+      color="success"
+      shape="round"
+      expand="block"
+      (click)="loginClick()"
+      >Login</ion-button
+      >
+
+  </ion-card-content>
+</ion-card>
+</div>
+</ion-content> -->
+<!-- <ion-alert
+[isOpen]="isAlertOpen"
+header="Error"
+subHeader="Error in adding data in field"
+message="Please enter all the fields."
+[buttons]="alertButtons"
+(didDismiss)="loginClick()"
+></ion-alert> -->
+
+
+
+<!-- </div> -->

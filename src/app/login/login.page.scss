@@ -1,0 +1,44 @@
+#container {
+    position: relative;
+    width: 50%;
+    right: 0;
+    top: 50%;
+  }
+
+//   .iosss {
+
+//     transform: translateX(-50%) translateY(-50%);
+//        top: 50%;
+//        left: 50%;
+//        position: absolute;
+//         } // close here
+// .ios{
+//      //position: relative;
+//      margin: auto;
+//      transform: translateY(20%);
+//     //transform: translate(-50%, -50%);
+// }
+
+
+   
+
+.ripple-parent {
+    margin:auto;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+  
+    width: 50%;
+    height: 50px;
+    border-radius: 8px;
+  }
+  
+.custom-parent {
+color: white;
+background-color: green;
+ }
